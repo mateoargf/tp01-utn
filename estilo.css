@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+}
+
+.imagenRegalo{
+    width: 25vw;
+    height: 65vh;
+    border-radius: 10px;
+}
