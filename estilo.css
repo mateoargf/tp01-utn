@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,71 +15,157 @@ body{
 main {
     width: 75vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-section{
+section {
     width: 25vw;
     height: 68vh;
-    border: 2px solid #a5a4a4a2;
+    border: 1px solid #a5a4a4a2;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 2rem 0;
 }
 
-.primer_p::after,.primer_p::before{
+form {
+    width: 80%;
+}
+
+.logos:hover{
+    background-color: #fa790f;
+}
+
+.primer_p::after,
+.primer_p::before {
     content: '';
     position: absolute;
-    width: 5vw;
+    width: 6vw;
     height: 1px;
     background-color: #a5a4a4a2;
     top: 1.3vh;
 }
 
-.primer_p::before{
-    right: 8.4vw;
+.primer_p::before {
+    right: 8.5vw;
 }
 
-.primer_p::after{
-    left: 8.4vw;
+.primer_p::after {
+    left: 8.5vw;
+}
+
+.titulo_formulario {
+    color: rgba(0, 0, 0, 0.692);
+    margin-top: 1rem;
 }
 
 .fuente {
     font-family: 'Montserrat', sans-serif;
+    border: none;
 }
 
 
 .imagenRegalo {
     width: 30vw;
-    height: 70vh;
+    height: 78vh;
     border-radius: 10px;
 }
 
-.div_logos{
+.div_logos {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin: 1rem;
 }
 
-.logos{
-    border: 2px solid  #a5a4a4a2;
-    border-radius: 5px;
+.logos {
+    border: 1px solid #a5a4a4a2;
+    border-radius: 6px;
     width: 2vw;
     height: 5vh;
     padding: 0.5rem 1.3rem;
 }
 
-.primer_p{
-    color:  #858282f3;
-    font-size: small;
+.primer_p {
+    color: #858282f3;
+    font-size: smaller;
     display: inline-block;
     position: relative;
+    margin-top: 0.5rem;
 }
 
-.div_botones{
-    width: 100%;
+.div_botones {
+    width: 75%;
     display: flex;
     justify-content: space-around;
+    margin-top: 1rem;
 }
+
+.boton_email {
+    background-color: #fa790f;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+}
+
+.boton_number,
+.boton_email,
+.boton_sing {
+    font-weight: bold;
+}
+
+.boton_number {
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.email_form,
+.password_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email_form{
+    margin-bottom: 1rem;
+}
+
+.email_label,
+.password_label {
+    color: #858282f3;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.email_label{
+    margin-top: 1rem;
+}
+
+.input_email, .input_password{
+    height: 5vh;
+    border: 1px solid #858282f3;
+    border-radius: 5px;
+}
+
+.segunda_p, .tercer_p{
+    color: #858282f3;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.boton_sing{
+    background-color: #fa790f;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 1rem 4.5rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.cuarta_p{
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    color: #fa790f;
+    text-decoration: underline;
+}
+
