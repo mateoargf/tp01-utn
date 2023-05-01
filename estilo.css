@@ -1,8 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+@keyframes animacion{
+    0%{
+        transform: scale(0.7);
+        filter: blur(2);
+    }
+
+    50%{
+        filter: blur(2);
+    }
+
+    75%{
+        filter: blur(2);
+    }
 }
 
 body {
@@ -219,19 +235,4 @@ form {
     margin: 0.5rem 0;
     color: #fa790f;
     border-bottom: 1px solid #fa790f;
-}
-
-@keyframes animacion{
-    0%{
-        transform: scale(0.7);
-        filter: blur(2);
-    }
-
-    50%{
-        filter: blur(2);
-    }
-
-    75%{
-        filter: blur(2);
-    }
 }
