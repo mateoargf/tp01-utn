@@ -16,17 +16,21 @@ main {
     width: 75vw;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    animation-name: animacion;
+    animation-duration: 1.5s;
 }
 
 section {
     width: 25vw;
-    height: 68vh;
+    min-height: 68vh;
     border: 1px solid #a5a4a4a2;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: nowrap;
     padding: 2rem 0;
 }
 
@@ -34,8 +38,17 @@ form {
     width: 80%;
 }
 
-.logos:hover{
+.div_logos:hover,
+.div_botones:hover {
+    transform: scale(0.9);
+    filter: blur(1);
+}
+
+.logos:hover {
     background-color: #fa790f;
+    border: none;
+    transform: scale(1.4);
+    filter: blur(1);
 }
 
 .primer_p::after,
@@ -54,6 +67,18 @@ form {
 
 .primer_p::after {
     left: 8.5vw;
+}
+
+.boton_email:hover,
+.boton_number:hover,
+.boton_sing:hover {
+    transform: scale(1.2);
+    background-color: #a5a4a4a2;
+    color: #fa790f;
+}
+
+.register:hover {
+    transform: scale(1.1);
 }
 
 .titulo_formulario {
@@ -80,12 +105,25 @@ form {
     margin: 1rem;
 }
 
+.div_logos,
+.div_botones,
+.boton_sing,
+.register {
+    transition: all 1.3s;
+}
+
 .logos {
     border: 1px solid #a5a4a4a2;
     border-radius: 6px;
     width: 2vw;
     height: 5vh;
     padding: 0.5rem 1.3rem;
+}
+
+.logos,
+.boton_email,
+.boton_number {
+    transition: all 1.5s;
 }
 
 .primer_p {
@@ -107,17 +145,19 @@ form {
     background-color: #fa790f;
     color: rgba(255, 255, 255, 0.829);
     padding: 0.7rem 1.5rem;
-    border-radius: 10px;
 }
 
 .boton_number,
 .boton_email,
 .boton_sing {
     font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .boton_number {
     color: rgba(0, 0, 0, 0.692);
+    padding: 0 0.5rem;
 }
 
 .email_form,
@@ -126,7 +166,7 @@ form {
     flex-direction: column;
 }
 
-.email_form{
+.email_form {
     margin-bottom: 1rem;
 }
 
@@ -137,24 +177,27 @@ form {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
-.email_label{
+
+.email_label {
     margin-top: 1rem;
 }
 
-.input_email, .input_password{
+.input_email,
+.input_password {
     height: 5vh;
     border: 1px solid #858282f3;
     border-radius: 5px;
 }
 
-.segunda_p, .tercer_p{
+.segunda_p,
+.tercer_p {
     color: #858282f3;
     font-size: 0.8rem;
     font-weight: 600;
     margin-top: 0.5rem;
 }
 
-.boton_sing{
+.boton_sing {
     background-color: #fa790f;
     color: rgba(255, 255, 255, 0.829);
     padding: 1rem 4.5rem;
@@ -162,10 +205,24 @@ form {
     margin-top: 1.5rem;
 }
 
-.cuarta_p{
+.register {
     font-size: 0.8rem;
     margin: 0.5rem 0;
     color: #fa790f;
-    text-decoration: underline;
+    border-bottom: 1px solid #fa790f;
 }
 
+@keyframes animacion{
+    0%{
+        transform: scale(0.7);
+        filter: blur(2);
+    }
+
+    50%{
+        filter: blur(2);
+    }
+
+    75%{
+        filter: blur(2);
+    }
+}
