@@ -1,24 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-
-@keyframes animacion{
-    0%{
-        transform: scale(0.7);
-        filter: blur(2);
-    }
-
-    50%{
-        filter: blur(2);
-    }
-
-    75%{
-        filter: blur(2);
-    }
 }
 
 body {
@@ -97,6 +81,13 @@ form {
     color: #fa790f;
 }
 
+.input_email:focus,
+.input_password:focus {
+    content: '';
+    border-bottom: 1px solid #fa790f;
+    transition: all 0.5s ease;
+}
+
 .register:hover {
     transform: scale(1.1);
 }
@@ -130,7 +121,7 @@ form {
 .div_botones,
 .boton_sing,
 .register {
-    transition: all 1.3s;
+    transition: all 1.3s ease;
 }
 
 .logos {
@@ -144,7 +135,7 @@ form {
 .logos,
 .boton_email,
 .boton_number {
-    transition: all 1.5s;
+    transition: all 1.5s ease;
 }
 
 .primer_p {
@@ -212,6 +203,23 @@ form {
     border-radius: 5px;
     color: #858282f3;
     padding-left: 0.5rem;
+    outline: 0px;
+}
+
+.div_input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.input_password {
+    position: relative;
+}
+
+.ojo {
+    position: relative;
+    top: -4vh;
+    left: 18vw;
 }
 
 .segunda_p,
@@ -235,4 +243,19 @@ form {
     margin: 0.5rem 0;
     color: #fa790f;
     border-bottom: 1px solid #fa790f;
+}
+
+@keyframes animacion {
+    0% {
+        transform: scale(0.7);
+        filter: blur(2);
+    }
+
+    50% {
+        filter: blur(2);
+    }
+
+    75% {
+        filter: blur(2);
+    }
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -28,11 +29,14 @@
             <form>
                 <div class="email_form">
                     <label class="fuente email_label">Email address</label>
-                    <input type="email" class="input_email" value="johnnydepp@gmail.com">
+                    <input type="email" class="input_email" value="johnnydepp@gmail.com" required>
                 </div>
                 <div class="password_form">
                     <label class="fuente password_label">Password</label>
-                    <input type="text" class="input_password" value="#u8S77A@1!">
+                    <div class="div_input">
+                    <input type="text" class="input_password" value="#u8S77A@1!" required>
+                    <i class="bi bi-eye ojo"></i>
+                    </div>
                 </div>
                 <p class="fuente segunda_p">Forgoten your password?</p>
             </form>
